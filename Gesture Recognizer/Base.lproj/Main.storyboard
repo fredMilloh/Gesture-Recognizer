@@ -8,6 +8,112 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Swippe-->
+        <scene sceneID="lES-PK-leS">
+            <objects>
+                <viewController id="6KK-TR-mxl" customClass="SwippeViewController" customModule="Gesture_Recognizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dH1-gD-As7">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swippe Gesture Recognizer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MyK-AY-SCw">
+                                <rect key="frame" x="20" y="94" width="350" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="lOg-MC-5v2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.09696625918" green="0.25727394219999999" blue="0.87063843009999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faire glisser/disparaître une vue vers la droite, la gauche, le haut, le bas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zuj-jW-Czh">
+                                <rect key="frame" x="20" y="149" width="350" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="39i-Hp-AoV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CoffeeCup" translatesAutoresizingMaskIntoConstraints="NO" id="dvl-GG-Kmb">
+                                <rect key="frame" x="-443" y="247" width="1276" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="WOk-qe-3TB"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FUh-vR-dkV">
+                                <rect key="frame" x="111" y="338" width="168" height="168"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="168" id="7G3-n4-hFk"/>
+                                    <constraint firstAttribute="width" constant="168" id="b9X-vJ-Q7e"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="84"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="b1t-as-GFq" appends="YES" id="xMo-eb-UvW"/>
+                                    <outletCollection property="gestureRecognizers" destination="QCV-Rp-Ukl" appends="YES" id="fSP-hX-ubT"/>
+                                    <outletCollection property="gestureRecognizers" destination="E9M-7N-Djb" appends="YES" id="84V-1p-Jv7"/>
+                                    <outletCollection property="gestureRecognizers" destination="19k-rO-hqX" appends="YES" id="NSA-Xs-1s7"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thé ou Café ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deK-af-Xnb">
+                                <rect key="frame" x="136.66666666666666" y="410.66666666666669" width="117" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oba-7y-tDt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dvl-GG-Kmb" firstAttribute="centerX" secondItem="dH1-gD-As7" secondAttribute="centerX" id="Kno-T6-umr"/>
+                            <constraint firstItem="deK-af-Xnb" firstAttribute="centerX" secondItem="dH1-gD-As7" secondAttribute="centerX" id="OYT-A0-KlY"/>
+                            <constraint firstItem="FUh-vR-dkV" firstAttribute="centerY" secondItem="dH1-gD-As7" secondAttribute="centerY" id="RiB-Rd-grr"/>
+                            <constraint firstItem="Zuj-jW-Czh" firstAttribute="top" secondItem="MyK-AY-SCw" secondAttribute="bottom" constant="30" id="WOw-vx-glG"/>
+                            <constraint firstItem="MyK-AY-SCw" firstAttribute="top" secondItem="oba-7y-tDt" secondAttribute="top" constant="50" id="d2V-lm-uBr"/>
+                            <constraint firstItem="MyK-AY-SCw" firstAttribute="leading" secondItem="oba-7y-tDt" secondAttribute="leading" constant="20" id="jgd-BH-c92"/>
+                            <constraint firstItem="deK-af-Xnb" firstAttribute="centerY" secondItem="dH1-gD-As7" secondAttribute="centerY" id="plw-os-7t0"/>
+                            <constraint firstItem="oba-7y-tDt" firstAttribute="trailing" secondItem="Zuj-jW-Czh" secondAttribute="trailing" constant="20" id="tDO-k4-oWx"/>
+                            <constraint firstItem="Zuj-jW-Czh" firstAttribute="leading" secondItem="oba-7y-tDt" secondAttribute="leading" constant="20" id="vCs-zt-dVb"/>
+                            <constraint firstItem="dvl-GG-Kmb" firstAttribute="centerY" secondItem="dH1-gD-As7" secondAttribute="centerY" id="wwG-sk-ic2"/>
+                            <constraint firstItem="oba-7y-tDt" firstAttribute="trailing" secondItem="MyK-AY-SCw" secondAttribute="trailing" constant="20" id="wzP-SE-BlF"/>
+                            <constraint firstItem="FUh-vR-dkV" firstAttribute="centerX" secondItem="dH1-gD-As7" secondAttribute="centerX" id="yxI-1y-JbO"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Swippe" id="Gor-1Y-YrG"/>
+                    <connections>
+                        <outlet property="maskView" destination="FUh-vR-dkV" id="w5R-08-bBi"/>
+                        <outlet property="theCafeLabel" destination="deK-af-Xnb" id="AyX-3W-Tbv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LrA-QD-0KB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="b1t-as-GFq">
+                    <connections>
+                        <action selector="swipeRight:" destination="6KK-TR-mxl" id="qUw-n0-VB7"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="QCV-Rp-Ukl">
+                    <connections>
+                        <action selector="swipeLeft:" destination="6KK-TR-mxl" id="m0I-S5-hmG"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="E9M-7N-Djb">
+                    <connections>
+                        <action selector="swipeDown:" destination="6KK-TR-mxl" id="Jd5-Lb-DWp"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="19k-rO-hqX">
+                    <connections>
+                        <action selector="swipeUp:" destination="6KK-TR-mxl" id="CB9-GG-jDi"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-35.384615384615387" y="821.80094786729853"/>
+        </scene>
         <!--Long Press-->
         <scene sceneID="r86-Nj-kbF">
             <objects>
@@ -179,6 +285,7 @@
                     <connections>
                         <segue destination="DMG-dB-z2K" kind="relationship" relationship="viewControllers" id="LLY-47-7Vp"/>
                         <segue destination="NZa-ZZ-EfE" kind="relationship" relationship="viewControllers" id="Pa6-7Y-6Q7"/>
+                        <segue destination="6KK-TR-mxl" kind="relationship" relationship="viewControllers" id="bcX-zg-GZY"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mBG-KI-WAK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -188,6 +295,7 @@
     </scenes>
     <resources>
         <image name="AmpouleLueur" width="1538" height="1282"/>
+        <image name="CoffeeCup" width="1276" height="1280"/>
         <image name="PageDeCahier" width="1368" height="1282"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -9,6 +9,11 @@ import UIKit
 
 class LongPressViewController: UIViewController {
     
+    //Storyboard, add LongPressGestureRecognizer on object
+    //UserInteractionEnabled is checked for this object (attribut inspector)
+    //@IBOutlet object
+    //@IBAction from Long Press Gesture Recognizer
+    
     @IBOutlet weak var lightBulb: UIImageView!
     @IBOutlet weak var blackView: UIView!
     
