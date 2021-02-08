@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="leu-mu-17D">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Long Press-->
+        <scene sceneID="r86-Nj-kbF">
+            <objects>
+                <viewController id="NZa-ZZ-EfE" customClass="LongPressViewController" customModule="Gesture_Recognizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kkc-Gz-H4a">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Long Press Gesture Recognizer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TsG-p0-ALZ">
+                                <rect key="frame" x="20" y="94" width="350" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="hoa-qU-smh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.09696625918" green="0.25727394219999999" blue="0.87063843009999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Appui Long sur ampoule pour l'éteindre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hy8-ap-dC2">
+                                <rect key="frame" x="20" y="169" width="350" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="nWA-tf-xEc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2yR-Pb-PzL">
+                                <rect key="frame" x="0.0" y="262" width="390" height="320"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="wAY-nC-SfU"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AmpouleLueur" translatesAutoresizingMaskIntoConstraints="NO" id="a79-yf-SGU">
+                                <rect key="frame" x="0.0" y="262" width="390" height="320"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="XBI-Xt-bF8"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="IPD-9l-S7b" appends="YES" id="DQ4-gZ-CAy"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bGf-3N-Vol"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TsG-p0-ALZ" firstAttribute="leading" secondItem="bGf-3N-Vol" secondAttribute="leading" constant="20" id="3f0-cV-gYe"/>
+                            <constraint firstItem="2yR-Pb-PzL" firstAttribute="centerY" secondItem="Kkc-Gz-H4a" secondAttribute="centerY" id="6Mq-Ib-7wO"/>
+                            <constraint firstItem="2yR-Pb-PzL" firstAttribute="bottom" secondItem="a79-yf-SGU" secondAttribute="bottom" id="8Qc-pg-XNo"/>
+                            <constraint firstItem="hy8-ap-dC2" firstAttribute="leading" secondItem="bGf-3N-Vol" secondAttribute="leading" constant="20" id="9Rq-om-9j0"/>
+                            <constraint firstItem="a79-yf-SGU" firstAttribute="leading" secondItem="Kkc-Gz-H4a" secondAttribute="leading" id="BhK-7e-eHl"/>
+                            <constraint firstItem="a79-yf-SGU" firstAttribute="centerY" secondItem="Kkc-Gz-H4a" secondAttribute="centerY" id="CLC-MC-Gc3"/>
+                            <constraint firstItem="bGf-3N-Vol" firstAttribute="trailing" secondItem="hy8-ap-dC2" secondAttribute="trailing" constant="20" id="EcO-hh-ud6"/>
+                            <constraint firstItem="a79-yf-SGU" firstAttribute="centerX" secondItem="Kkc-Gz-H4a" secondAttribute="centerX" id="F22-wf-s0k"/>
+                            <constraint firstItem="hy8-ap-dC2" firstAttribute="top" secondItem="TsG-p0-ALZ" secondAttribute="bottom" constant="50" id="FZi-mr-Bgj"/>
+                            <constraint firstItem="2yR-Pb-PzL" firstAttribute="centerX" secondItem="Kkc-Gz-H4a" secondAttribute="centerX" id="HN1-Kg-LsO"/>
+                            <constraint firstItem="2yR-Pb-PzL" firstAttribute="trailing" secondItem="a79-yf-SGU" secondAttribute="trailing" id="JWO-nk-zZq"/>
+                            <constraint firstAttribute="trailing" secondItem="a79-yf-SGU" secondAttribute="trailing" id="KSL-Ry-HC7"/>
+                            <constraint firstItem="bGf-3N-Vol" firstAttribute="trailing" secondItem="TsG-p0-ALZ" secondAttribute="trailing" constant="20" id="LFJ-zZ-erM"/>
+                            <constraint firstItem="2yR-Pb-PzL" firstAttribute="leading" secondItem="bGf-3N-Vol" secondAttribute="leading" id="ams-CJ-Bag"/>
+                            <constraint firstItem="2yR-Pb-PzL" firstAttribute="top" secondItem="a79-yf-SGU" secondAttribute="top" id="bwg-8j-6SM"/>
+                            <constraint firstItem="2yR-Pb-PzL" firstAttribute="trailing" secondItem="bGf-3N-Vol" secondAttribute="trailing" id="rDB-8a-vAW"/>
+                            <constraint firstItem="TsG-p0-ALZ" firstAttribute="top" secondItem="bGf-3N-Vol" secondAttribute="top" constant="50" id="s4z-dv-O36"/>
+                            <constraint firstItem="2yR-Pb-PzL" firstAttribute="leading" secondItem="a79-yf-SGU" secondAttribute="leading" id="s9L-qV-nM6"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Long Press" id="aVC-Ul-Lsf"/>
+                    <connections>
+                        <outlet property="blackView" destination="2yR-Pb-PzL" id="Ove-qn-92R"/>
+                        <outlet property="lightBulb" destination="a79-yf-SGU" id="JfS-kW-bRe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qps-vj-duU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="IPD-9l-S7b">
+                    <connections>
+                        <action selector="lightOff:" destination="NZa-ZZ-EfE" id="VZZ-2G-a7c"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="873.84615384615381" y="337.67772511848341"/>
+        </scene>
+        <!--Pan-->
+        <scene sceneID="hqa-Qn-SAG">
+            <objects>
+                <viewController id="DMG-dB-z2K" customClass="PanViewController" customModule="Gesture_Recognizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P0m-YF-8TZ">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pan Gesture Recognizer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zzt-n9-dJq">
+                                <rect key="frame" x="20" y="50" width="350" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="ymc-wi-sfX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.09696625918" green="0.25727394219999999" blue="0.87063843009999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PageDeCahier" translatesAutoresizingMaskIntoConstraints="NO" id="ywA-em-8AO">
+                                <rect key="frame" x="-489" y="247" width="1368" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="ChC-eq-a53"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSh-0R-Skj">
+                                <rect key="frame" x="66" y="305" width="111" height="93"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="3gj-29-tEy"/>
+                                </constraints>
+                                <string key="text">Et olim licet otiosae sint tribus pacataeque centuriae et nulla suffragiorum certamina set Pompiliani redierit securitas temporis, per omnes tamen quotquot sunt partes terrarum, ut domina suscipitur et regina et ubique patrum reverenda cum auctoritate canities populique Romani nomen circumspectum et verecundum.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="6"/>
+                                <color key="textColor" red="0.34022444489999998" green="0.23576366900000001" blue="0.20391339059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="qQq-Qw-4Gh" appends="YES" id="OSi-hD-Kov"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Déplacer le texte sur le cahier" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Rg-LW-BhC">
+                                <rect key="frame" x="20" y="125" width="350" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="IFj-nK-7RX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bLr-gv-7hI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Zzt-n9-dJq" secondAttribute="trailing" constant="20" id="6Ry-li-AsU"/>
+                            <constraint firstItem="ywA-em-8AO" firstAttribute="centerX" secondItem="P0m-YF-8TZ" secondAttribute="centerX" id="A89-gG-FNP"/>
+                            <constraint firstItem="bLr-gv-7hI" firstAttribute="bottom" secondItem="GSh-0R-Skj" secondAttribute="bottom" constant="363" id="Afn-HM-uth"/>
+                            <constraint firstItem="Zzt-n9-dJq" firstAttribute="leading" secondItem="P0m-YF-8TZ" secondAttribute="leading" constant="20" id="BNN-T4-Bsh"/>
+                            <constraint firstItem="bLr-gv-7hI" firstAttribute="trailing" secondItem="GSh-0R-Skj" secondAttribute="trailing" constant="213" id="I7v-4h-XRL"/>
+                            <constraint firstItem="4Rg-LW-BhC" firstAttribute="leading" secondItem="bLr-gv-7hI" secondAttribute="leading" constant="20" id="IjM-sk-B7V"/>
+                            <constraint firstItem="bLr-gv-7hI" firstAttribute="trailing" secondItem="4Rg-LW-BhC" secondAttribute="trailing" constant="20" id="R7n-Rh-aOe"/>
+                            <constraint firstItem="GSh-0R-Skj" firstAttribute="leading" secondItem="bLr-gv-7hI" secondAttribute="leading" constant="66" id="gfC-VI-tSU"/>
+                            <constraint firstItem="ywA-em-8AO" firstAttribute="centerY" secondItem="P0m-YF-8TZ" secondAttribute="centerY" id="hw6-ny-rkX"/>
+                            <constraint firstItem="Zzt-n9-dJq" firstAttribute="top" secondItem="P0m-YF-8TZ" secondAttribute="top" constant="50" id="kvb-WS-v6v"/>
+                            <constraint firstItem="4Rg-LW-BhC" firstAttribute="top" secondItem="Zzt-n9-dJq" secondAttribute="bottom" constant="50" id="xth-Bt-yyS"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pan" id="La2-B4-FuZ"/>
+                    <connections>
+                        <outlet property="textFragment" destination="GSh-0R-Skj" id="GVD-h2-YLd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QsT-TV-J2i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="qQq-Qw-4Gh">
+                    <connections>
+                        <action selector="panTexte:" destination="DMG-dB-z2K" id="6bJ-Lu-PV6"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="875.38461538461536" y="-330.5687203791469"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="uAl-hQ-xCM">
+            <objects>
+                <tabBarController id="leu-mu-17D" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="j0b-v0-E2t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="DMG-dB-z2K" kind="relationship" relationship="viewControllers" id="LLY-47-7Vp"/>
+                        <segue destination="NZa-ZZ-EfE" kind="relationship" relationship="viewControllers" id="Pa6-7Y-6Q7"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mBG-KI-WAK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-33" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AmpouleLueur" width="1538" height="1282"/>
+        <image name="PageDeCahier" width="1368" height="1282"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
