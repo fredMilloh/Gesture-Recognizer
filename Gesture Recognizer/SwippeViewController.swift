@@ -9,6 +9,11 @@ import UIKit
 
 class SwippeViewController: UIViewController {
     
+    //Storyboard, add SwippeGestureRecognizer on object
+    //UserInteractionEnabled is checked for this object (attribut inspector)
+    //@IBOutlet object
+    //@IBAction from Swippe Gesture Recognizer
+    
     @IBOutlet weak var maskView: UIView!
     @IBOutlet weak var theCafeLabel: UILabel!
     
