@@ -18,6 +18,8 @@
 		B6CCE99125D29A2A0085935F /* PanTransformViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCE99025D29A2A0085935F /* PanTransformViewController.swift */; };
 		B6CCE99525D2C2CB0085935F /* PinchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCE99425D2C2CB0085935F /* PinchViewController.swift */; };
 		B6CCE99925D2C6C50085935F /* RotateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCE99825D2C6C50085935F /* RotateViewController.swift */; };
+		B6CCE9A125D308870085935F /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCE9A025D308870085935F /* TodoViewController.swift */; };
+		B6CCE9A425D30CF60085935F /* AccueilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCE9A325D30CF60085935F /* AccueilViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		B6CCE99025D29A2A0085935F /* PanTransformViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanTransformViewController.swift; sourceTree = "<group>"; };
 		B6CCE99425D2C2CB0085935F /* PinchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchViewController.swift; sourceTree = "<group>"; };
 		B6CCE99825D2C6C50085935F /* RotateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateViewController.swift; sourceTree = "<group>"; };
+		B6CCE9A025D308870085935F /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
+		B6CCE9A325D30CF60085935F /* AccueilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccueilViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,12 +76,14 @@
 				B6CCE96025D194330085935F /* Assets.xcassets */,
 				B6CCE96225D194330085935F /* LaunchScreen.storyboard */,
 				B6CCE96525D194330085935F /* Info.plist */,
+				B6CCE9A325D30CF60085935F /* AccueilViewController.swift */,
 				B6CCE98625D195A90085935F /* PanViewController.swift */,
 				B6CCE99025D29A2A0085935F /* PanTransformViewController.swift */,
 				B6CCE98925D19C7D0085935F /* LongPressViewController.swift */,
 				B6CCE98C25D1AA490085935F /* SwippeViewController.swift */,
 				B6CCE99425D2C2CB0085935F /* PinchViewController.swift */,
 				B6CCE99825D2C6C50085935F /* RotateViewController.swift */,
+				B6CCE9A025D308870085935F /* TodoViewController.swift */,
 			);
 			path = "Gesture Recognizer";
 			sourceTree = "<group>";
@@ -153,9 +159,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6CCE98A25D19C7D0085935F /* LongPressViewController.swift in Sources */,
+				B6CCE9A125D308870085935F /* TodoViewController.swift in Sources */,
 				B6CCE98D25D1AA490085935F /* SwippeViewController.swift in Sources */,
 				B6CCE95825D1942F0085935F /* AppDelegate.swift in Sources */,
 				B6CCE99925D2C6C50085935F /* RotateViewController.swift in Sources */,
+				B6CCE9A425D30CF60085935F /* AccueilViewController.swift in Sources */,
 				B6CCE99125D29A2A0085935F /* PanTransformViewController.swift in Sources */,
 				B6CCE99525D2C2CB0085935F /* PinchViewController.swift in Sources */,
 				B6CCE98725D195A90085935F /* PanViewController.swift in Sources */,

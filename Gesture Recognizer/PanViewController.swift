@@ -10,7 +10,7 @@ import UIKit
 class PanViewController: UIViewController {
     
     //Storyboard, add PanGestureRecognizer on object
-    //UserInteractionEnabled is checked for this object (attribut inspector)
+    //UserInteractionEnabled is checked for this object (attributes inspector)
     //@IBAction from Pan Gesture Recognizer
     
     @IBOutlet weak var textFragment: UILabel!
