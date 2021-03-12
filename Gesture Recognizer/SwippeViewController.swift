@@ -54,12 +54,11 @@ class SwippeViewController: UIViewController {
     // on peut aussi relier les 4 swippe Gesture sur 1 @IBAction
     // et se servir d'un switch sender.direction et case .up/.down ...
     
-    @IBAction func screenEdgeTop(_ sender: UIScreenEdgePanGestureRecognizer) {
+    @IBAction func screenEdgeLeft(_ sender: UIScreenEdgePanGestureRecognizer) {
         if sender.state == .recognized {
             print("geste reconnu")
             let vc = TodoViewController()
-            vc.modalPresentationStyle = .fullScreen
-            vc.modalTransitionStyle = .partialCurl
+            vc.modalTransitionStyle = .flipHorizontal
             present(vc, animated: true, completion: nil)
         }
     }

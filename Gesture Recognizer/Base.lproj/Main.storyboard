@@ -201,7 +201,7 @@
                 <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="pKU-aD-hHO">
                     <rectEdge key="edges" left="YES"/>
                     <connections>
-                        <action selector="screenEdgeTop:" destination="6KK-TR-mxl" id="X8K-rW-ydn"/>
+                        <action selector="screenEdgeLeft:" destination="6KK-TR-mxl" id="VUj-aN-Kmt"/>
                     </connections>
                 </screenEdgePanGestureRecognizer>
             </objects>
@@ -410,13 +410,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PageDeCahier" translatesAutoresizingMaskIntoConstraints="NO" id="ywA-em-8AO">
-                                <rect key="frame" x="-489" y="247" width="1368" height="350"/>
+                                <rect key="frame" x="0.0" y="247" width="390" height="350"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="350" id="ChC-eq-a53"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSh-0R-Skj">
-                                <rect key="frame" x="66" y="305" width="111" height="93"/>
+                                <rect key="frame" x="40" y="304" width="150" height="93"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="93" id="3gj-29-tEy"/>
@@ -430,7 +430,7 @@
                                 </connections>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Déplacer le texte sur le cahier" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Rg-LW-BhC">
-                                <rect key="frame" x="20" y="125" width="350" height="25"/>
+                                <rect key="frame" x="20" y="110" width="350" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="IFj-nK-7RX"/>
                                 </constraints>
@@ -458,18 +458,20 @@
                         <constraints>
                             <constraint firstItem="bLr-gv-7hI" firstAttribute="bottom" secondItem="I6Z-eU-7QQ" secondAttribute="bottom" constant="40" id="3Rk-PX-2qc"/>
                             <constraint firstAttribute="trailing" secondItem="Zzt-n9-dJq" secondAttribute="trailing" constant="20" id="6Ry-li-AsU"/>
+                            <constraint firstItem="GSh-0R-Skj" firstAttribute="leading" secondItem="P0m-YF-8TZ" secondAttribute="leading" constant="40" id="70E-Ij-WTB"/>
                             <constraint firstItem="ywA-em-8AO" firstAttribute="centerX" secondItem="P0m-YF-8TZ" secondAttribute="centerX" id="A89-gG-FNP"/>
-                            <constraint firstItem="bLr-gv-7hI" firstAttribute="bottom" secondItem="GSh-0R-Skj" secondAttribute="bottom" constant="363" id="Afn-HM-uth"/>
+                            <constraint firstItem="ywA-em-8AO" firstAttribute="bottom" secondItem="GSh-0R-Skj" secondAttribute="bottom" constant="200" id="Afn-HM-uth"/>
                             <constraint firstItem="Zzt-n9-dJq" firstAttribute="leading" secondItem="P0m-YF-8TZ" secondAttribute="leading" constant="20" id="BNN-T4-Bsh"/>
-                            <constraint firstItem="bLr-gv-7hI" firstAttribute="trailing" secondItem="GSh-0R-Skj" secondAttribute="trailing" constant="213" id="I7v-4h-XRL"/>
+                            <constraint firstItem="bLr-gv-7hI" firstAttribute="trailing" secondItem="GSh-0R-Skj" secondAttribute="trailing" constant="200" id="I7v-4h-XRL"/>
                             <constraint firstItem="4Rg-LW-BhC" firstAttribute="leading" secondItem="bLr-gv-7hI" secondAttribute="leading" constant="20" id="IjM-sk-B7V"/>
                             <constraint firstItem="bLr-gv-7hI" firstAttribute="trailing" secondItem="4Rg-LW-BhC" secondAttribute="trailing" constant="20" id="R7n-Rh-aOe"/>
                             <constraint firstItem="bLr-gv-7hI" firstAttribute="trailing" secondItem="I6Z-eU-7QQ" secondAttribute="trailing" constant="20" id="VBH-IO-VTL"/>
-                            <constraint firstItem="GSh-0R-Skj" firstAttribute="leading" secondItem="bLr-gv-7hI" secondAttribute="leading" constant="66" id="gfC-VI-tSU"/>
                             <constraint firstItem="ywA-em-8AO" firstAttribute="centerY" secondItem="P0m-YF-8TZ" secondAttribute="centerY" id="hw6-ny-rkX"/>
+                            <constraint firstItem="ywA-em-8AO" firstAttribute="leading" secondItem="P0m-YF-8TZ" secondAttribute="leading" id="iCR-kc-WOo"/>
+                            <constraint firstAttribute="trailing" secondItem="ywA-em-8AO" secondAttribute="trailing" id="irc-iQ-nzI"/>
                             <constraint firstItem="Zzt-n9-dJq" firstAttribute="top" secondItem="P0m-YF-8TZ" secondAttribute="top" constant="50" id="kvb-WS-v6v"/>
                             <constraint firstItem="I6Z-eU-7QQ" firstAttribute="leading" secondItem="bLr-gv-7hI" secondAttribute="leading" constant="20" id="m1W-g7-rRW"/>
-                            <constraint firstItem="4Rg-LW-BhC" firstAttribute="top" secondItem="Zzt-n9-dJq" secondAttribute="bottom" constant="50" id="xth-Bt-yyS"/>
+                            <constraint firstItem="4Rg-LW-BhC" firstAttribute="top" secondItem="Zzt-n9-dJq" secondAttribute="bottom" constant="35" id="xth-Bt-yyS"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pan" id="La2-B4-FuZ"/>

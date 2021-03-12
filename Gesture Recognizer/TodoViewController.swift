@@ -11,7 +11,7 @@ class TodoViewController: UIViewController {
     
     private let button: UIButton = {
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
-        button.setTitle("Quitter", for: .normal)
+        button.setTitle("Réussi 👍🏼 ...retour", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.backgroundColor = .systemRed
         return button
@@ -26,12 +26,6 @@ class TodoViewController: UIViewController {
     }
     
     @objc func backView() {
-        let vc = AccueilViewController()
-        
-        vc.modalTransitionStyle = .flipHorizontal
-        present(vc, animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
-
-    
-
 }
